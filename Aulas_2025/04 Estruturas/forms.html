@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Forms</title>
+</head>
+
+<body>
+    <form>
+        <!-- Nome e Sobrenome -->
+        <p>
+            <label for="nome">Primeiro nome:</label>
+            <input type="text" id="nome">
+            <label for="Sobrenome">Sobrenome:</label>
+            <input type="text" id="sobrenome">
+        </p>
+        <!-- Telefone e Email -->
+        <p>
+            <label>
+                Telefone:
+                <input type="phone" id="tel">
+            </label>
+            <label>
+                Email:
+                <input type="email" id="email">
+            </label>
+        </p>
+
+        <!-- Cores -->
+        <p>
+            <label for="cor"> Escolha sua cor:</label>
+            <input type="color" name="" id="cor">
+        </p>
+
+        <!-- Arquivos -->
+        <p>
+            <label for="Arquivo">Escolha seu arquivo:</label>
+            <input type="file" id="Arquivo">
+        </p>
+
+        <!-- Mensagens -->
+        <p>
+            <label for="msg">Deixe sua mensagem:</label>
+            <textarea name="msg" cols="50" rows="5"></textarea>
+        </p>
+
+        <!-- Estados -->
+        <select id="estados">
+            <option value="amazonas">Amazonas</option>
+            <option value="tocantins">Tocantins</option>
+            <option value="para">Pará</option>
+            <option value="piaui">Piauí</option>
+        </select>
+
+        <p></p> <!--espaçamento-->
+
+        <!-- Botões -->
+        <!-- obs.: quando colocar o mesmo "name", a bolinha se torna selecionável apenas uma única vez -->
+        <fieldset>
+
+            <legend>Qual seu carro preferido?</legend>
+            <input type="radio" name="carros" id="a3"><label for="a3">A3</label>
+            <input type="radio" name="carros" id="q5"><label for="q5">Q5</label>
+            <input type="radio" name="carros" id="x1"><label for="x1">X1</label>
+            <input type="radio" name="carros" id="hrv"><label for="hrv">HRV</label>
+
+        </fieldset>
+
+        <p></p> <!--espaçamento-->
+
+        <!-- CheckBox -->
+        <fieldset>
+            <legend>Qual(is) seu(s) passeio(s) preferido(s)?</legend>
+            <input type="checkbox" name="passeio" id="praia">
+            <label for="praia">Praia</label>
+            <input type="checkbox" name="passeio" id="parque">
+            <label for="parque">Parque</label>
+            <input type="checkbox" name="passeio" id="campo">
+            <label for="campo">Campo</label>
+            <input type="checkbox" name="passeio" id="zoologico">
+            <label for="zoologico">Zoológico</label>
+        </fieldset>
+
+        <!-- Botão de Enviar -->
+        <p>
+            <input type="submit" id="submit" value="Enviar">
+        </p>
+
+    </form>
+</body>
+
+</html>
