@@ -1,0 +1,50 @@
+#titulo { 
+color:green;
+text-align: center;
+}
+
+/* paragrafos que tem id=descricao ( = E lógico) */
+p#descricao {
+    color: blue;
+}
+
+/* paragrafos que tem a classe=promocao (= E lógico) */
+p.promocao {
+    text-align: center;
+    background-color: lightgreen;
+}
+h1.promocao {
+    color: orange;
+}
+.nova {
+    color: white;
+}
+
+/* paragrafo E classe=final-pagina E id=rodape */
+p.final-pagina#rodape {
+    background-color: lightgray;
+    text-align: center;
+}
+
+
+.novo-curso {
+    background-color: aliceblue;
+    color: red;
+}
+
+.curso {
+    background-color: aliceblue;
+}
+
+/* curso OU (,) novo curso */
+.curso, .novo-curso {
+    background-color: aliceblue;
+}
+
+/* classe curso OU classe novo curso OU id contato  */
+.curso, .novo-curso, #contato {
+    padding: 12px;
+    border: 1px solid lightpink;
+}
+
+/* . = class // # = id */

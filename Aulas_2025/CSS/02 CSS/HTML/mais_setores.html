@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mais Seletores</title>
+    <style>
+        /* todo P "filho" indireto ou direto de article */
+        article p {
+            padding: 12px;
+            background-color: lightgrey;
+        }
+
+        /* todo p da classe promocao, filho direto ou indireto de um elemento com id=principal */
+        #principal p.promocao {
+            padding: 12px;
+            background-color: aliceblue;
+        }
+
+        body #principal article section p.coordenacao {
+            text-align: center;
+            
+        }
+
+        /* todo paragrafo (p) filho direto de article  */
+        article > p {
+            border: 2px solid red;
+        }
+
+        main > article section > p.coordenacao  {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <main id="principal">
+        <h1 id="titulo">Portal de Cursos</h1>
+        <p id="descricao">Temos vagas para diversas áreas.</p>
+        <p class="promocao nova">Venha nos visitar e conhecer nossas ofertas de <strong>bolsas de estudo</strong>.</p>
+
+        <article>
+            <h3> Cursos </h3>
+
+            <p class="novo-curso">Análise e Desenvolvimento de Sistemas</p>
+            <p class="curso">Ciência da Computação</p>
+            <p class="curso">Ciência de Dados</p>
+
+            <section>
+                <p class="coordenacao"> Conheça nossos Coordenadores</p>
+            </section>
+
+        </article>
+
+
+        <p class="final-pagina" id="contato">Entre em contato: 1234-5678</p>
+        <p class="final-pagina" id="rodape">&copy;Todos os Direitos Reservados</p>
+    </main>
+</body>
+
+</html>
