@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Box Sizing</title>
+
+    <style>
+        body{
+            margin: 0px;
+            border: 1px solid red;
+        }
+        .caixa1, .caixa2 {
+            width: 300px; 
+            text-align: justify;
+            background-color: lightblue;
+            border: 1px solid blue;
+        }
+        .caixa1 {
+            padding: 20px;
+            box-sizing: border-box;
+            /* border-box vai até o limite da borda, enquanto o content-box mantem a borda, com o texto dentro  */
+        }
+        .rodape {
+            background-color: bisque;
+            text-align: center;
+            padding: 10px;
+            border: 1px solid brown;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <article>
+        <p class="caixa1"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum assumenda incidunt itaque
+            dolorem fuga. Alias placeat deleniti, omnis iure, quis, officia assumenda eos dicta recusandae nisi beatae
+            at facere tempore!</p>
+        <p class="caixa2"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, autem saepe. Eveniet tempora,
+            officiis possimus magnam labore, vero sapiente rerum praesentium recusandae ex, corrupti vel architecto.
+            Aliquam beatae et reiciendis!</p>
+        <footer class="rodape"> Obrigado, volte sempre!</footer>
+    </article>
+</body>
+
+</html>
