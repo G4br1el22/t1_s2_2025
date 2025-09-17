@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layouts</title>
+
+    <style>
+
+        body {
+            margin: 0px;
+            font-size: 32px;
+            /* o que é h1 é 64px e o que é p é 32p */
+        }
+
+        .ciencia,
+        .dados,
+        .sistemas {
+            /* display: inline-block; */
+            /* se precisar, ele empilha as informações */
+            border: 2px solid black;
+            padding: 12px;
+            /* width: 200px; */
+            /* width: 20%; */
+
+        }
+
+        @media(min-width: 900px) {
+            .ciencia, .dados, .sistemas {
+                display: inline-block;
+                width: 20%;
+            }
+        }
+
+        @media(min-width: 600px) {
+            .ciencia, .dados, .sistemas {
+                background-color: lightskyblue;
+            }
+        }
+
+        main {
+            border: 2px solid red;
+            margin: 0 auto;
+            text-align: center;
+            /* width: 1280px; */
+            width: 100%;
+        }
+
+    </style>
+</head>
+<main>
+    <article class="ciencia"> Ciência da Computação</article>
+    <article class="dados"> Ciência de Dados</article>
+    <article class="sistemas"> Sistema de informação</article>
+</main>
+
+<body>
+
+
+</body>
+
+</html>
