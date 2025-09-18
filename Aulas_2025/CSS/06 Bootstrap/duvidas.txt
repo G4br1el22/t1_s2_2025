@@ -1,0 +1,4 @@
+voce que determinou o tamanho de cada? é o tamanho por colunas do bootstrap? por exemplo, o sm-10, voce definiu que small é 10? ou poderia colocar sm-9?
+r.: isso significa que, quando o tamanho de tela for small, ele vai usar 10 colunas de bootstrap
+e.g.: col-md-6 -> ele ira usar 6 colunas de bootstrap quando o tamanho de tela for medium
+
