@@ -1,0 +1,51 @@
+bordas.html
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bordas</title>
+
+    <style>
+        a {
+            padding: 5px;
+            border-width: 1px;
+            border-style: solid;
+            border-color: red;
+            /* ou entao */
+            border: 1px blue dashed;
+            border-radius: 5px 20px;
+        }
+
+        .engenharia {
+            /* border-top: 1px green solid; */
+            padding: 5px;
+            border: 1px green solid;
+            border-radius: 10px 20px 30px 40px;
+            /* border-radius "vai/gira" em sentido horario */
+        }
+
+        .ciencia {
+            /* border-left: 2px blueviolet solid; */
+            padding: 5px;
+            border: 1px blueviolet solid;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main>
+        <div id="cursos">
+            <p class="engenharia">Engenharia da Computação</p>
+            <p class="ciencia">Ciência da Computação</p>
+            <a href="#">Mais Informações</a>
+            <!-- ancora é (a) inline -->
+        </div>
+    </main>
+
+</body>
+
+</html>
