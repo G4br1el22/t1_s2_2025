@@ -1,0 +1,7 @@
+ctrl d (p sair do node) 
+p/ executar um arquivo pelo node: Node <nome-do-arquivo>
+
+função callback: ___ 
+
+const primeirasLetras = nomes.map (n => n.charAt("0"))
+leitura: mapeia toda primeira letra dos nomes presentes no vetor
